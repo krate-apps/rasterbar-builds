@@ -286,7 +286,7 @@ jobs:
 
       - name: Upload artifacts
         if: steps.pre-check.outputs.should_build == 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: libtorrent-${{ matrix.libtorrent_version }}-${{ matrix.os }}
           path: artifacts/*
@@ -340,7 +340,7 @@ jobs:
 
       - name: Create Release
         if: steps.prepare.outputs.skip_release == 'false'
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: v${{ matrix.version }}
           name: libtorrent-rasterbar ${{ matrix.version }}
