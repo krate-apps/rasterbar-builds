@@ -1,4 +1,4 @@
-# libtorrent-rasterbar-builds
+# rasterbar-builds
 
 CI builds of [libtorrent](https://github.com/arvidn/libtorrent) (Rasterbar / libtorrent-rasterbar): runtime `.deb`, `-dev`, and Python bindings. **One set of packages per libtorrent version**, built on a **single reference image**; the `.deb` files are meant for recent **Debian and Ubuntu** on **amd64**, without separate builds per distro codename.
 
@@ -26,7 +26,7 @@ Debian **`Package:`** fields remain **`libtorrent-rasterbar`**, **`libtorrent-ra
 
 ## Installation
 
-1. Download the `.deb` files for the desired libtorrent version from [Releases](https://github.com/krate-binaries/libtorrent-rasterbar-builds/releases).
+1. Download the `.deb` files for the desired libtorrent version from [Releases](https://github.com/krate-apps/rasterbar-builds/releases).
 2. Install with `sudo dpkg -i …` then `sudo apt-get install -f` if needed.
 
 ## JSON metadata
