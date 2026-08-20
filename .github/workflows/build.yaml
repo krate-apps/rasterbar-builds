@@ -150,7 +150,7 @@ jobs:
         run: |
           git clone --recursive --branch "v${{ matrix.libtorrent_version }}" \
             https://github.com/arvidn/libtorrent.git libtorrent
-          git clone https://github.com/krate-binaries/tools tools
+          git clone https://github.com/krate-apps/tools tools
           find tools/ -name "*.sh" -exec chmod +x {} +
 
       - name: Install Boost from boost-builds release
@@ -308,7 +308,7 @@ jobs:
       - name: Checkout tools repository
         uses: actions/checkout@v6
         with:
-          repository: krate-binaries/tools
+          repository: krate-apps/tools
           path: tools
 
       - name: Download artifacts
