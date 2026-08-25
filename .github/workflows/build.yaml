@@ -27,7 +27,7 @@ jobs:
       matrix: ${{ steps.set.outputs.matrix }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Generating matrix
         id: generate
@@ -303,10 +303,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Checkout tools repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: krate-apps/tools
           path: tools
